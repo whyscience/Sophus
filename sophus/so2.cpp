@@ -29,8 +29,9 @@ namespace Sophus
 
 SO2::SO2()
 {
-  unit_complex_.real() = 1.;
-  unit_complex_.imag() = 0.;
+  // https://blog.csdn.net/Son_of_the_Bronx/article/details/138212308
+  unit_complex_.real(1.);
+  unit_complex_.imag(0.);
 }
 
 SO2
